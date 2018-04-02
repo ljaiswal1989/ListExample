@@ -9,10 +9,8 @@ import { Provider } from 'mobx-react';
 import myDataSource from './data/DataStore';
 import {UserListPage} from './UserListPage';
 
-var _that;
 
-
-export default class Index extends React.Component {
+export default class App extends React.Component {
     constructor(props) {
         super(props);
         this.state={
@@ -20,7 +18,6 @@ export default class Index extends React.Component {
     }
 
     componentWillMount(){
-        _that=this;
     }
 
     componentDidMount(){
